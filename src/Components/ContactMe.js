@@ -1,5 +1,6 @@
 import React from 'react'
 import location from '../location.png'
+import { Formik } from 'formik';
 
 const ContactMe = () => {
   return (
@@ -21,7 +22,7 @@ const ContactMe = () => {
         </div>
       </div>
     </div>
-    <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+    <form class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
       <h2  style={{fontSize:"25px"}} class="text-gray-900 text-lg mb-1 font-medium title-font">Message Me</h2>
       <p style={{fontSize:"18px"}} class="leading-relaxed mb-5 text-gray-600">You can update your queries here including your details...</p>
       <div class="relative mb-4">
@@ -38,7 +39,7 @@ const ContactMe = () => {
       </div>
       <button class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Send Message</button>
       <p class="text-xs text-gray-500 mt-3">Your message will be reviewed asap!</p>
-    </div>
+    </form>
   </div>
 </section>
     </div>
